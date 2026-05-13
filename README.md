@@ -106,30 +106,6 @@ Source/
 - ✅ **Liskov Substitution Principle (LSP)**: Todas las estrategias son intercambiables vía `IFormaGeometrica`
 - ✅ **Dependency Inversion**: Las clases dependen de abstracciones (`IFormaGeometrica`, `GeneradorReporte`)
 
-## Próximos Pasos - Publicar a Git
-
-Para publicar este código a un repositorio remoto:
-
-```bash
-# 1. Agregar archivos al repositorio local
-cd c:\Users\ladra\Downloads\DevelopmentChallenge\DevelopmentChallenge
-git add -A
-
-# 2. Hacer commit con descripción
-git commit -m "refactor: Implementación de patrones Strategy + Template Method
-
-- Strategy: IFormaGeometrica para extensibilidad de formas
-- Template Method: GeneradorReporte para extensibilidad de idiomas
-- Feature: Agregar Trapecio, Rectángulo e italiano
-- Tests: 11 tests unitarios pasando correctamente"
-
-# 3. Crear repositorio remoto (en GitHub/GitLab/Azure DevOps)
-# y luego:
-git remote add origin <URL_DEL_REPOSITORIO>
-git branch -M main
-git push -u origin main
-```
-
 ## Notas de Implementación
 
 - El proyecto usa **.NET 8.0**
